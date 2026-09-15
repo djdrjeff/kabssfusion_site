@@ -30,7 +30,7 @@
   kfLoadAnalytics();
   </script>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.tiktok.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.doubleclick.net https://*.tiktok.com; frame-src https://www.googletagmanager.com; form-action 'self' https://formsubmit.co; base-uri 'self'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>KABSS FUSION LTD | Cybersecurity & IT Support, Nairobi</title>
@@ -83,7 +83,6 @@
 <link rel="apple-touch-icon" href="images/icon-192.png?v=3">
 <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22KABSS%20FUSION%20LTD%22%2C%22short_name%22%3A%22KABSS%20FUSION%22%2C%22description%22%3A%22Cybersecurity%2C%20Data%20Protection%2C%20laptops%20%26%20IT%20support%20in%20Nairobi.%22%2C%22start_url%22%3A%22./%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%2317191D%22%2C%22theme_color%22%3A%22%2317191D%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage/svg%2Bxml%2C%253Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%253E%253Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2713%27%20fill%3D%27%252317191D%27/%253E%253Cpath%20d%3D%27M20%2014h7v15l13-15h8.5L42%2031l13%2019h-9L36%2035l-9%2010v5h-7z%27%20fill%3D%27%2523F03B41%27/%253E%253C/svg%253E%22%2C%22sizes%22%3A%22any%22%2C%22type%22%3A%22image/svg%2Bxml%22%2C%22purpose%22%3A%22any%20maskable%22%7D%5D%7D">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="KABSS FUSION">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,9 +105,8 @@
   --ink-soft:#555B63;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
-body{font-family:'IBM Plex Sans',sans-serif;color:var(--charcoal);background:var(--white);line-height:1.6;font-size:16px;-webkit-tap-highlight-color:transparent}
-a,button,.wa,.totop,.menu-btn,.nav-cta,.nav-shop-cta{-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;color:var(--charcoal);background:var(--white);line-height:1.6;font-size:16px}
 h1,h2,h3{font-family:'Archivo',sans-serif;line-height:1.1;font-weight:700}
 .mono{font-family:'IBM Plex Mono',monospace}
 a{color:inherit}
@@ -533,7 +531,7 @@ html.dark .theme-btn .ic-sun{display:block;fill:none}
 .faq-toggle.open .fx{transform:rotate(45deg)}
 
 /* ===== CHAT DOCK (WhatsApp) ===== */
-.chat-dock{position:fixed;right:22px;bottom:22px;bottom:calc(22px + env(safe-area-inset-bottom));z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.chat-dock{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
 .chat-dock .chat-stack{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
 .chat-tip{position:absolute;right:66px;top:50%;transform:translateY(-50%);background:var(--charcoal);color:#fff;font-size:.78rem;font-weight:600;padding:8px 12px;border-radius:10px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s;box-shadow:0 8px 20px rgba(0,0,0,.22)}
 .chat-tip::after{content:"";position:absolute;right:-5px;top:50%;transform:translateY(-50%) rotate(45deg);width:10px;height:10px;background:var(--charcoal)}
@@ -560,7 +558,7 @@ html.dark .theme-btn .ic-sun{display:block;fill:none}
 .wa{position:relative}
 
 /* ===== BACK TO TOP ===== */
-.totop{position:fixed;left:22px;bottom:22px;bottom:calc(22px + env(safe-area-inset-bottom));z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.18);background:rgba(23,25,29,.82);color:#fff;font-size:1.15rem;cursor:pointer;backdrop-filter:blur(4px);opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .3s,transform .3s,background .2s}
+.totop{position:fixed;left:22px;bottom:22px;z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.18);background:rgba(23,25,29,.82);color:#fff;font-size:1.15rem;cursor:pointer;backdrop-filter:blur(4px);opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .3s,transform .3s,background .2s}
 .totop.show{opacity:1;transform:none;pointer-events:auto}
 .totop:hover{background:var(--red)}
 
@@ -611,12 +609,7 @@ html.dark .quiz-card,html.dark .form{box-shadow:0 14px 36px rgba(0,0,0,.4)}
   .q-btns{flex-direction:column}
   .wa-pop{width:min(272px,calc(100vw - 44px))}
   .chat-tip{display:none}
-  .chat-dock{right:16px;bottom:16px;bottom:calc(16px + env(safe-area-inset-bottom))}
-  /* iOS Safari zooms the page when a focused field's font is under 16px — keep these at 16px on phones */
-  .form input,.form select,.form textarea,.wa-type input{font-size:16px}
-  /* Apple HIG minimum comfortable touch target is 44x44pt */
-  .menu-btn{min-width:44px;min-height:44px;padding:10px 14px}
-  .wa-type button{width:44px;height:44px}
+  .chat-dock{right:16px;bottom:16px}
 }
 
 /* ===== HERO PARTICLE NETWORK ===== */
@@ -663,7 +656,7 @@ html.dark .sec-head h2:hover,html.dark .qf-title:hover{animation-name:glitchD}
 .addq:hover{border-color:var(--red);color:var(--red)}
 
 /* ===== FLOATING DOCK (quote + compare) ===== */
-#floatDock{position:fixed;left:50%;transform:translateX(-50%);bottom:22px;bottom:calc(22px + env(safe-area-inset-bottom));z-index:59;display:flex;flex-direction:column;align-items:center;gap:10px;pointer-events:none;width:min(460px,calc(100vw - 24px))}
+#floatDock{position:fixed;left:50%;transform:translateX(-50%);bottom:22px;z-index:59;display:flex;flex-direction:column;align-items:center;gap:10px;pointer-events:none;width:min(460px,calc(100vw - 24px))}
 #floatDock>*{pointer-events:auto}
 .dock-pills{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .qbar-pill,.cmp-chip{border:none;cursor:pointer;border-radius:999px;padding:12px 20px;font-family:inherit;font-size:.9rem;font-weight:600;box-shadow:0 12px 32px rgba(0,0,0,.3);transition:transform .15s,background .2s}
@@ -676,7 +669,7 @@ html.dark .sec-head h2:hover,html.dark .qf-title:hover{animation-name:glitchD}
 .cmp-chip:hover{background:var(--red-bright)}
 .qpanel{width:100%;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 24px 70px rgba(0,0,0,.3);padding:18px}
 .qp-head{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.05rem;margin-bottom:6px}
-.qp-items{max-height:240px;overflow:auto;-webkit-overflow-scrolling:touch}
+.qp-items{max-height:240px;overflow:auto}
 .qp-it{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:.86rem}
 .qp-name{font-weight:600}
 .qp-ctrl{display:flex;align-items:center;gap:9px}
@@ -693,7 +686,7 @@ html.dark .sec-head h2:hover,html.dark .qf-title:hover{animation-name:glitchD}
 /* ===== MODALS (compare + palette) ===== */
 .modal{position:fixed;inset:0;z-index:90;background:rgba(10,11,14,.6);backdrop-filter:blur(3px);display:grid;place-items:center;padding:20px}
 .modal[hidden]{display:none}
-.modal-card{position:relative;width:min(860px,100%);max-height:84vh;max-height:84dvh;overflow:auto;-webkit-overflow-scrolling:touch;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--red);border-radius:var(--radius);padding:30px}
+.modal-card{position:relative;width:min(860px,100%);max-height:84vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--red);border-radius:var(--radius);padding:30px}
 .modal-card h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.3rem;margin-bottom:16px}
 .modal-x{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;font-size:1rem}
 .modal-x:hover{border-color:var(--red);color:var(--red)}
@@ -724,7 +717,7 @@ html.dark .sec-head h2:hover,html.dark .qf-title:hover{animation-name:glitchD}
 @media(max-width:640px){.pm-body{grid-template-columns:1fr}.pm-photo{aspect-ratio:16/10}}
 @media (prefers-reduced-motion:reduce){.prod-modal-card{animation:none}}
 
-.cmp-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.cmp-table-wrap{overflow-x:auto}
 .cmp-table-wrap table{width:100%;border-collapse:collapse;font-size:.88rem}
 .cmp-table-wrap th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);padding:11px 12px 11px 0;vertical-align:top;white-space:nowrap}
 .cmp-table-wrap td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:top;min-width:170px}
@@ -738,7 +731,7 @@ html.no-scroll{overflow:hidden}
 #palette{align-items:start;padding-top:14vh}
 .pal-card{width:min(560px,100%);background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.4);overflow:hidden}
 #palInput{width:100%;border:none;outline:none;background:transparent;color:var(--ink);font-family:inherit;font-size:1.05rem;padding:18px 20px;border-bottom:1px solid var(--line)}
-.pal-list{max-height:330px;overflow:auto;-webkit-overflow-scrolling:touch}
+.pal-list{max-height:330px;overflow:auto}
 .pal-it{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 20px;cursor:pointer;font-size:.92rem;font-weight:500}
 .pal-it small{color:var(--ink-soft);font-weight:400;margin-left:6px}
 .pal-it.act,.pal-it:hover{background:rgba(216,35,42,.08)}
@@ -854,10 +847,7 @@ body.shop-mode .nav-shop-cta::after{display:none}
 
 #shopBar{display:none}
 body.shop-mode #shopBar{
-  /* Must stay below nav's z-index:50 — nav's stacking context is where the
-     mobile hamburger dropdown (.nav-links.open) lives, and a shopBar
-     z-index above nav's was covering that open menu in shop mode. */
-  display:block;position:sticky;top:72px;z-index:45;
+  display:block;position:sticky;top:72px;z-index:90;
   background:linear-gradient(180deg,#1b1f26,#14171c);
   border-bottom:1px solid rgba(255,255,255,.08);
   box-shadow:0 6px 22px -14px rgba(0,0,0,.6)
@@ -912,19 +902,15 @@ body.shop-mode #contact{display:none}
   .nav-shop-cta::after{display:none}
 }
 
-/* ===== MOBILE: shrink the nav Shop button =====
-   Below 960px the nav-links are hidden but the logo, sound/theme toggles, the
-   Shop pill and the hamburger all still share one row. On real iPhone widths
-   (~375-430px) the full "Shop With Us" pill left no room for the hamburger,
-   pushing it off-screen and making the mobile menu impossible to open — so
-   on phones the CTA collapses to an icon-only circular button instead. */
+/* ===== MOBILE: shrink the nav Shop button ===== */
 @media(max-width:600px){
-  .nav-shop-cta{width:44px;height:44px;padding:0;gap:0;justify-content:center}
-  .nav-shop-cta .shop-cta-txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
-  .nav-shop-cta .shop-cta-ic{font-size:1.2rem}
+  .nav-shop-cta{padding:8px 15px;font-size:.84rem;gap:6px}
   .snd-btn,.theme-btn{width:34px;height:34px}
   .nav-icons{gap:5px}
   .nav-inner{gap:4px}
+}
+@media(max-width:380px){
+  .nav-shop-cta{padding:7px 12px;font-size:.76rem;gap:5px}
 }
 /* ============================================================
    KABSS FUSION - RESPONSIVE POLISH v2 (catalogue photos + layout)
@@ -940,12 +926,8 @@ body.shop-mode #contact{display:none}
    White photo panel, 4:3 box so the two columns stay aligned. */
 @media (max-width:960px){
   .prod{padding:20px}
-  /* Most catalogue photos are tall 600x900 flyer graphics, not landscape
-     banners — a 4:3 box with object-fit:cover cropped nearly all of the
-     image away. aspect-ratio:3/4 plus object-fit:contain shows the whole
-     photo; any leftover margin blends into the white panel background. */
-  .prod .photo{height:auto;aspect-ratio:3/4;background:#fff;padding:10px}
-  .prod .photo img{width:100%;height:100%;object-fit:contain;object-position:center;padding:0}
+  .prod .photo{height:auto;aspect-ratio:4/3;background:#fff;padding:0}
+  .prod .photo img{width:100%;height:100%;object-fit:cover;object-position:top;padding:0}
 }
 
 /* --- SMALL TABLET / LARGE PHONE (max 768px) --- */
@@ -959,8 +941,8 @@ body.shop-mode #contact{display:none}
 @media (max-width:600px){
   .wrap{padding:0 18px}
   .prod{padding:18px}
-  .prod .photo{height:auto;aspect-ratio:3/4;min-height:120px;background:#fff;padding:10px}
-  .prod .photo img{width:100%;height:100%;object-fit:contain;object-position:center;padding:0}
+  .prod .photo{height:auto;aspect-ratio:4/3;min-height:120px;background:#fff;padding:0}
+  .prod .photo img{width:100%;height:100%;object-fit:cover;object-position:top;padding:0}
   .prod h3{font-size:1.05rem}
   .promo-bar{padding:14px 18px}
 }
@@ -974,7 +956,7 @@ body.shop-mode #contact{display:none}
 }
 
 /* --- COOKIE CONSENT BANNER --- */
-.kf-consent{position:fixed;left:0;right:0;bottom:0;z-index:9999;display:none;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;background:var(--charcoal);color:rgba(255,255,255,.88);padding:16px 24px;padding-bottom:calc(16px + env(safe-area-inset-bottom));border-top:1px solid var(--line-light);box-shadow:0 -8px 30px rgba(0,0,0,.35)}
+.kf-consent{position:fixed;left:0;right:0;bottom:0;z-index:9999;display:none;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;background:var(--charcoal);color:rgba(255,255,255,.88);padding:16px 24px;border-top:1px solid var(--line-light);box-shadow:0 -8px 30px rgba(0,0,0,.35)}
 .kf-consent.visible{display:flex}
 .kf-consent-text{margin:0;font-size:.86rem;line-height:1.5;max-width:640px;flex:1 1 320px}
 .kf-consent-actions{display:flex;gap:10px;flex:0 0 auto}
@@ -984,7 +966,7 @@ body.shop-mode #contact{display:none}
 .kf-consent-decline{background:transparent;color:rgba(255,255,255,.7);border:1px solid var(--line-light)}
 .kf-consent-decline:hover{color:#fff;border-color:rgba(255,255,255,.4)}
 @media (max-width:520px){
-  .kf-consent{padding:14px 16px;padding-bottom:calc(14px + env(safe-area-inset-bottom))}
+  .kf-consent{padding:14px 16px}
   .kf-consent-actions{width:100%;justify-content:stretch}
   .kf-consent-btn{flex:1}
 }
@@ -1028,7 +1010,7 @@ body.shop-mode #contact{display:none}
         </button>
       </div>
     </div>
-    <a class="nav-shop-cta" href="#shop" id="navShop" aria-label="Shop With Us">
+    <a class="nav-shop-cta" href="#shop" id="navShop">
       <span class="shop-cta-ic">🛍️</span><span class="shop-cta-txt">Shop With Us</span>
     </a>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
